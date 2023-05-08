@@ -4,6 +4,8 @@ body {
 	padding: 0;
 	font-family: 'Rubik', sans-serif;
 	background-color: #eef0f4;
+	color: #432000;
+  user-select: none;
 }
 
 .container {
@@ -40,8 +42,13 @@ input {
 }
 
 button {
+	cursor: pointer;
 	color: #fdfdfd;
 	background-color: #ac485a;
+}
+
+button:hover {
+	background-color: #432000;
 }
 
 ul {
@@ -49,8 +56,6 @@ ul {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: space-around; */
-	/* align-items: flex-start; */
 	gap: 10px;
 }
 
@@ -58,4 +63,9 @@ ul li {
 	background-color: #fffdf8;
 	flex-grow: 1;
 	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover {
+  cursor: pointer;
+	background-color: #ffecc7;
 }
